@@ -43,7 +43,7 @@ namespace AspNetCoreTodo
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             //little book 
             services.AddSingleton<ITodoItemService, FakeTodoItemService>();

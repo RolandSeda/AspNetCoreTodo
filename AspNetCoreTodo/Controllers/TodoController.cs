@@ -15,7 +15,7 @@ namespace AspNetCoreTodo.Controllers
 
         public TodoController(ITodoItemService todoItemService)
         {
-            _todoItemService = _todoItemService;
+            _todoItemService = todoItemService;
         }
         public async Task<IActionResult> Index()
         {
